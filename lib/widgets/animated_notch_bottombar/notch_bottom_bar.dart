@@ -125,7 +125,7 @@ class _AnimatedNotchBottomBarState extends State<AnimatedNotchBottomBar> {
                           opacity:
                               widget.showBlurBottomBar ? widget.blurOpacity : 1,
                           child: CustomPaint(
-                            size: Size(width, height-kMargin),
+                            size: Size(width, height - kMargin),
                             painter: BottomBarPainter(
                                 position:
                                     _itemPosByScrollPosition(scrollPosition),

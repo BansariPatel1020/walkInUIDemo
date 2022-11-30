@@ -49,7 +49,7 @@ class BottomBarInActiveItem extends StatelessWidget {
                       color: Colors.grey[700],
                       fontSize: 12.0,
                     ),
-                    textAlign: TextAlign.center,
+                textAlign: TextAlign.center,
               ),
             ],
           ],

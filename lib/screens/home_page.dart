@@ -139,16 +139,19 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: const EdgeInsets.all(10),
               child: Stack(
-                children:  [
+                children: [
                   Align(
                     alignment: Alignment.center,
-                    child: Text('Stay Safe',style: staySafeTextStyle(),),
+                    child: Text(
+                      'Stay Safe',
+                      style: staySafeTextStyle(),
+                    ),
                   ),
                   Align(
                     alignment: Alignment.centerRight,
                     child: InkWell(
-                      onTap: ()  =>setState(() {
-                        showSafetyGuildLines=false;
+                      onTap: () => setState(() {
+                        showSafetyGuildLines = false;
                       }),
                       child: const Icon(
                         Icons.close,
@@ -165,7 +168,8 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   safetyCard(ImagePath.wearMaskImg, 'Always wear a mask'),
                   safetyCard(ImagePath.washHandsImg, 'Wash Hands'),
-                  safetyCard(ImagePath.keepDistanceImg, 'Keep distance from other people')
+                  safetyCard(ImagePath.keepDistanceImg,
+                      'Keep distance from other people')
                 ],
               ),
             ),
@@ -177,13 +181,13 @@ class _HomePageState extends State<HomePage> {
 
   Widget safetyCard(String img, String title) {
     return Container(
-        height:150,
-        width: 100,
-        alignment: Alignment.topCenter,
+      height: 150,
+      width: 100,
+      alignment: Alignment.topCenter,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          SizedBox(height: 80,child: Image.asset(img)),
+          SizedBox(height: 80, child: Image.asset(img)),
           const SizedBox(height: 5),
           Text(
             title,

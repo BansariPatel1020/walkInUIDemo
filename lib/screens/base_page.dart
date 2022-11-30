@@ -83,7 +83,6 @@ class _MyHomePageState extends State<MyHomePage> {
       extendBody: true,
       bottomNavigationBar: (bottomBarPages.length <= maxCount)
           ? AnimatedNotchBottomBar(
-            
               pageController: _pageController,
               color: Colors.white,
               notchColor: Colors.blue,
@@ -120,14 +119,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   itemLabel: 'My QR',
                 ),
-                // BottomBarItem(
-                //   inActiveItem: Image.asset(ImagePath.profileIcon),
-                //   activeItem: Image.asset(
-                //     ImagePath.profileIcon,
-                //     color: Colors.white,
-                //   ),
-                //   itemLabel: 'Profile',
-                // ),
                 const BottomBarItem(
                   inActiveItem: Icon(
                     Icons.person_outline_rounded,
@@ -159,5 +150,3 @@ class _MyHomePageState extends State<MyHomePage> {
     super.dispose();
   }
 }
-
-

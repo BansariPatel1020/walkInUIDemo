@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class ScanQRPage extends StatelessWidget {
@@ -7,6 +6,10 @@ class ScanQRPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.green, child: const Center(child: Text('Scan QR')));
+      color: Colors.green,
+      child: const Center(
+        child: Text('Scan QR'),
+      ),
+    );
   }
 }

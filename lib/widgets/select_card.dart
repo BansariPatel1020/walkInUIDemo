@@ -26,7 +26,7 @@ class SelectCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Expanded(child: Image.asset(choice.icon)),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Text(
               choice.title,
               style: selectCardTextStyle(),

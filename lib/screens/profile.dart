@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -7,7 +6,10 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.lightGreenAccent,
-        child: const Center(child: Text('Profile')));
+      color: Colors.lightGreenAccent,
+      child: const Center(
+        child: Text('Profile'),
+      ),
+    );
   }
 }

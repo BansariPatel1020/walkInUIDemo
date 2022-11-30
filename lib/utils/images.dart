@@ -27,6 +27,4 @@ class ImagePath {
   static const String keepDistanceImg = '$imageDir/keep_distance_icon.png';
 
   static const String myQR = '$imageDir/qrcode.png';
-
-  
 }
